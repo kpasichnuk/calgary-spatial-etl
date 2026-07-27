@@ -41,7 +41,7 @@ The land-use source contained 43 invalid geometries in this run. Transform repai
 
 This is not the same as a production deployment guarantee. Current boundaries include:
 
-- no configured Git remote, CI pipeline, scheduler, alerting service, or production hosting
+- a public GitHub remote is configured, but there is no CI pipeline, scheduler, alerting service, or production hosting
 - reliance on live Calgary API availability and a working local Docker service
 - local development credentials in the default Docker configuration; nonlocal credentials must come from secure environment configuration
 - full-snapshot table replacement rather than incremental loading or upsert history

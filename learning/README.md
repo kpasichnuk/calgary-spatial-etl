@@ -89,6 +89,10 @@ Use these curriculum-wide resources after passing every module test:
 4. Revisit the [study guide](guides/project1_study_guide.md) and [big-picture guide](guides/project1_big_picture_guide.md) for weak areas and runbook details.
 5. Use the [junior GIS developer guide](guides/project1_junior_gis_developer_guide.md) to frame the project for a portfolio or interview.
 
+## Concept Notes
+
+Use the [concept notes](concept_notes/README.md) for focused explanations of questions that arise while reading the guides. Current topics cover GitHub publication, dataset identifiers, data quality gates, coordinate reference systems, data contracts, schemas, provenance, and idempotency.
+
 ## Resource Roles
 
 - **Reference:** teaches concepts, mental models, common mistakes, and review criteria.
@@ -96,6 +100,7 @@ Use these curriculum-wide resources after passing every module test:
 - **Module test:** measures closed-note retention at the end of one module.
 - **Walkthrough:** demonstrates the connected project workflow.
 - **Guide:** explains curriculum-wide concepts or operating decisions.
+- **Concept note:** gives a focused explanation of one term or closely related idea.
 - **Assessment:** measures cumulative understanding across multiple modules.
 
 Generated data, QA reports, logs, credentials, local environments, and editor state are project artifacts rather than learning resources and should not be added to this index.
