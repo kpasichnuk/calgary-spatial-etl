@@ -67,3 +67,10 @@ Learning material is kept beside the implementation so exercises remain grounded
 - `learning/assessments/`: retrieval-practice assessment
 - `learning/reference/`: line-by-line explanations
 - `learning/guides/`: project and library guides
+
+Start with the [Project 1 learning resource index](learning/README.md), or use the core sequence directly:
+
+- [Project study guide](learning/guides/project1_study_guide.md)
+- [ETL walkthrough](learning/walkthroughs/project1_etl_walkthrough.ipynb)
+- [Big-picture project guide](learning/guides/project1_big_picture_guide.md)
+- [Big-picture assessment](learning/assessments/project1_big_picture_assessment.ipynb)

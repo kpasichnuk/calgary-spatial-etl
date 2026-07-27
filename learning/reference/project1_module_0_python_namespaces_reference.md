@@ -1,4 +1,4 @@
-# Python Namespaces Explained
+# Project 1 Module 0: Python Namespaces Reference
 
 ## What Is a Namespace?
 

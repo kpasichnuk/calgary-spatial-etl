@@ -1,4 +1,4 @@
-# extract.py Deep Explanation
+# Project 1 Module 3: Extract Reference
 
 ## File Purpose
 This module performs the Extract stage of ETL:

@@ -1,4 +1,4 @@
-# config.py Deep Explanation
+# Project 1 Module 3: Configuration Reference
 
 ## File Purpose
 This module is a single source of truth for dataset configuration.
