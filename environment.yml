@@ -1,0 +1,19 @@
+name: calgary-etl
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandas
+  - geopandas
+  - shapely
+  - pyproj
+  - proj
+  - proj-data
+  - fiona
+  - sqlalchemy
+  - geoalchemy2
+  - psycopg2
+  - pip
+  - pip:
+      - python-dotenv
+      - pyyaml

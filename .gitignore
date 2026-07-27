@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Environments and secrets
+.env
+.env.*
+!.env.example
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors and OS
+.vscode/
+.DS_Store
+
+# Runtime outputs
+data/raw/*.geojson
+data/processed/*.geojson
+outputs/logs/*.csv
+outputs/qa/*.csv
+
+# Local database exports
+*.dump
+*.sql.gz
