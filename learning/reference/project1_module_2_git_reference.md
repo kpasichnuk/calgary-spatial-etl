@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This reference teaches the version-control concepts behind [Module 2 Git practice](../practice/project1_module_2_git_practice.ipynb).
+This reference teaches the version-control concepts behind [Module 2 Git practice](../starters/project1_module_2_git_practice.ipynb).
 
 ## 1. What Git Tracks
 
@@ -212,6 +212,6 @@ You should be able to explain:
 
 ## Companion Resources
 
-- [Module 2 Git practice](../practice/project1_module_2_git_practice.ipynb)
+- [Module 2 Git practice](../starters/project1_module_2_git_practice.ipynb)
 - [Project 1 learning index](../README.md)
 - [Project 1 study guide](../guides/project1_study_guide.md)

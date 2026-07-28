@@ -130,4 +130,4 @@ A source that begins paginating responses could still return a valid HTTP respon
 - [Data artifacts](project1_data_artifacts.md)
 - [Data contracts and stage boundaries](project1_data_contracts.md)
 - [Module 3 Extract reference](../reference/project1_module_3_extract_reference.md)
-- [Module 3 Extract practice](../practice/project1_module_3_extract_practice.ipynb)
+- [Module 3 Extract practice](../starters/project1_module_3_extract_practice.ipynb)

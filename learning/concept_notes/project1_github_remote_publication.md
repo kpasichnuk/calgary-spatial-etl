@@ -107,4 +107,4 @@ The local and remote hashes should match after a successful push.
 ## Related Resources
 
 - [Module 2 Git reference](../reference/project1_module_2_git_reference.md)
-- [Module 2 Git practice](../practice/project1_module_2_git_practice.ipynb)
+- [Module 2 Git practice](../starters/project1_module_2_git_practice.ipynb)

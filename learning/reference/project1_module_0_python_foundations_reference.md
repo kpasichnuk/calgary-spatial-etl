@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This reference teaches the Python concepts used throughout the Calgary Spatial ETL project. Use it to understand a concept before or after attempting the exercises in [Module 0 Python foundations practice](../practice/project1_module_0_python_foundations_practice.ipynb).
+This reference teaches the Python concepts used throughout the Calgary Spatial ETL project. Use it to understand a concept before or after attempting the exercises in [Module 0 Python foundations practice](../starters/project1_module_0_python_foundations_practice.ipynb).
 
 The notebook is for retrieval and coding practice. This document is for explanation and review.
 
@@ -348,6 +348,6 @@ You are ready for the practice notebook when you can explain:
 
 ## Companion Resources
 
-- [Module 0 Python foundations practice](../practice/project1_module_0_python_foundations_practice.ipynb)
+- [Module 0 Python foundations practice](../starters/project1_module_0_python_foundations_practice.ipynb)
 - [Module 0 Python namespaces reference](project1_module_0_python_namespaces_reference.md)
 - [Project 1 study guide](../guides/project1_study_guide.md)

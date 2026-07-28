@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This reference teaches the connected workflow and verification concepts behind [Module 7 orchestration and testing practice](../practice/project1_module_7_orchestration_testing_practice.ipynb) and `src/main.py`.
+This reference teaches the connected workflow and verification concepts behind [Module 7 orchestration and testing practice](../starters/project1_module_7_orchestration_testing_practice.ipynb) and `src/main.py`.
 
 ## 1. Orchestration Versus Stage Logic
 
@@ -239,6 +239,6 @@ You should be able to explain:
 
 ## Companion Resources
 
-- [Module 7 orchestration and testing practice](../practice/project1_module_7_orchestration_testing_practice.ipynb)
+- [Module 7 orchestration and testing practice](../starters/project1_module_7_orchestration_testing_practice.ipynb)
 - [Project 1 ETL walkthrough](../walkthroughs/project1_etl_walkthrough.ipynb)
 - [Big-picture assessment](../assessments/project1_big_picture_assessment.ipynb)

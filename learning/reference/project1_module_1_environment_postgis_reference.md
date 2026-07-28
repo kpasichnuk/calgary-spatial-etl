@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This reference explains the project context, Python environment, Docker, and PostGIS concepts behind [Module 1 environment and PostGIS practice](../practice/project1_module_1_environment_postgis_practice.ipynb).
+This reference explains the project context, Python environment, Docker, and PostGIS concepts behind [Module 1 environment and PostGIS practice](../starters/project1_module_1_environment_postgis_practice.ipynb).
 
 ## 1. Project Context
 
@@ -192,6 +192,6 @@ You should be able to explain:
 
 ## Companion Resources
 
-- [Module 1 environment and PostGIS practice](../practice/project1_module_1_environment_postgis_practice.ipynb)
+- [Module 1 environment and PostGIS practice](../starters/project1_module_1_environment_postgis_practice.ipynb)
 - [Module 6 Load and PostGIS reference](project1_module_6_load_postgis_reference.md)
 - [Project 1 study guide](../guides/project1_study_guide.md)

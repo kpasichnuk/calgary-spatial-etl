@@ -122,5 +122,5 @@ The appropriate level depends on audit, regulatory, and reproducibility needs.
 ## Related Resources
 
 - [Module 3 Extract reference](../reference/project1_module_3_extract_reference.md)
-- [Module 3 Extract practice](../practice/project1_module_3_extract_practice.ipynb)
+- [Module 3 Extract practice](../starters/project1_module_3_extract_practice.ipynb)
 - [Data contracts and stage boundaries](project1_data_contracts.md)

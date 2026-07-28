@@ -7,13 +7,23 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-PRACTICE_DIR = PROJECT_ROOT / "learning" / "practice"
-ATTEMPTS_DIR = PROJECT_ROOT / "learning" / "attempts"
+STARTER_DIRS = {
+    "learning": PROJECT_ROOT / "learning" / "starters",
+    "analysis": PROJECT_ROOT / "analysis" / "starters",
+}
+TEST_DIRS = {
+    "learning": PROJECT_ROOT / "learning" / "module_tests",
+    "analysis": PROJECT_ROOT / "analysis" / "module_tests",
+}
+WORKING_DIRS = {
+    "learning": PROJECT_ROOT / "learning" / "working",
+    "analysis": PROJECT_ROOT / "analysis" / "working",
+}
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Create clean, disposable attempts from practice notebooks."
+        description="Create ignored working copies from clean notebook starters."
     )
     parser.add_argument(
         "module",
@@ -24,29 +34,55 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Overwrite an existing attempt notebook.",
     )
+    parser.add_argument(
+        "--test",
+        action="store_true",
+        help="Create a working copy from a module test instead of a practice starter.",
+    )
+    parser.add_argument(
+        "--analysis",
+        action="store_true",
+        help="Use the spatial-analysis curriculum instead of the core learning curriculum.",
+    )
     return parser.parse_args()
 
 
-def find_practice_notebooks(module: str) -> list[Path]:
+def find_source_notebooks(
+    module: str,
+    resource: str = "practice",
+    curriculum: str = "learning",
+) -> list[Path]:
+    source_dir = TEST_DIRS[curriculum] if resource == "test" else STARTER_DIRS[curriculum]
+    prefix = "project1_analysis_module" if curriculum == "analysis" else "project1_module"
+
     if module == "all":
-        paths = sorted(PRACTICE_DIR.glob("project1_module_*_practice.ipynb"))
+        paths = sorted(source_dir.glob(f"{prefix}_*_{resource}.ipynb"))
     elif module.isdigit():
         paths = sorted(
-            PRACTICE_DIR.glob(f"project1_module_{int(module)}_*_practice.ipynb")
+            source_dir.glob(f"{prefix}_{int(module)}_*_{resource}.ipynb")
         )
     else:
         raise ValueError("Module must be a number or 'all'.")
 
     if not paths:
-        raise FileNotFoundError(f"No practice notebook found for module {module}.")
+        raise FileNotFoundError(
+            f"No {resource} notebook found for module {module}."
+        )
     if module != "all" and len(paths) > 1:
-        raise RuntimeError(f"More than one practice notebook matched module {module}.")
+        raise RuntimeError(
+            f"More than one {resource} notebook matched module {module}."
+        )
     return paths
 
 
-def attempt_path(practice_path: Path) -> Path:
-    name = practice_path.name.replace("_practice.ipynb", "_attempt.ipynb")
-    return ATTEMPTS_DIR / name
+def working_path(
+    source_path: Path,
+    resource: str = "practice",
+    curriculum: str = "learning",
+) -> Path:
+    replacement = "_test_working.ipynb" if resource == "test" else "_working.ipynb"
+    name = source_path.name.replace(f"_{resource}.ipynb", replacement)
+    return WORKING_DIRS[curriculum] / name
 
 
 def clear_execution_state(path: Path) -> None:
@@ -61,28 +97,37 @@ def clear_execution_state(path: Path) -> None:
     )
 
 
-def reset_notebooks(module: str, force: bool) -> list[Path]:
-    practice_paths = find_practice_notebooks(module)
-    destinations = [attempt_path(path) for path in practice_paths]
+def reset_notebooks(
+    module: str,
+    force: bool,
+    resource: str = "practice",
+    curriculum: str = "learning",
+) -> list[Path]:
+    source_paths = find_source_notebooks(module, resource, curriculum)
+    destinations = [working_path(path, resource, curriculum) for path in source_paths]
     existing = [path for path in destinations if path.exists()]
 
     if existing and not force:
         names = ", ".join(path.name for path in existing)
         raise FileExistsError(
-            f"Attempt already exists: {names}. Use --force to replace it."
+            f"Working copy already exists: {names}. Use --force to replace it."
         )
 
-    ATTEMPTS_DIR.mkdir(parents=True, exist_ok=True)
-    for practice_path, destination in zip(practice_paths, destinations):
-        shutil.copy2(practice_path, destination)
+    WORKING_DIRS[curriculum].mkdir(parents=True, exist_ok=True)
+    for source_path, destination in zip(source_paths, destinations):
+        shutil.copy2(source_path, destination)
         clear_execution_state(destination)
     return destinations
 
 
 def main() -> None:
     args = parse_args()
+    resource = "test" if args.test else "practice"
+    curriculum = "analysis" if args.analysis else "learning"
     try:
-        destinations = reset_notebooks(args.module.lower(), args.force)
+        destinations = reset_notebooks(
+            args.module.lower(), args.force, resource, curriculum
+        )
     except (FileExistsError, FileNotFoundError, RuntimeError, ValueError) as error:
         raise SystemExit(f"ERROR: {error}") from error
 

@@ -75,7 +75,9 @@ RUN_POSTGIS_TESTS=1 python -m unittest discover -s tests -v
 Learning material is kept beside the implementation so exercises remain grounded in verified behavior:
 
 - `learning/walkthroughs/`: guided project walkthrough
-- `learning/practice/`: progressive practice notebooks for setup, Extract, Transform, QA, and Load
+- `learning/starters/`: clean, version-controlled practice notebook originals
+- `learning/working/`: ignored local copies used while completing exercises
+- `learning/attempts/`: completed notebooks preserved for review or portfolio evidence
 - `learning/assessments/`: retrieval-practice assessment
 - `learning/reference/`: line-by-line explanations
 - `learning/guides/`: project and library guides

@@ -194,5 +194,5 @@ The network connection between them lets the Python Load stage publish approved 
 
 - [Environment dependency definitions](project1_environment_dependency_definitions.md)
 - [Module 1 environment and PostGIS reference](../reference/project1_module_1_environment_postgis_reference.md)
-- [Module 1 environment and PostGIS practice](../practice/project1_module_1_environment_postgis_practice.ipynb)
+- [Module 1 environment and PostGIS practice](../starters/project1_module_1_environment_postgis_practice.ipynb)
 - [Module 6 Load and PostGIS reference](../reference/project1_module_6_load_postgis_reference.md)

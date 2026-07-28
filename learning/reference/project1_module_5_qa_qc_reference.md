@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This reference teaches the quality concepts behind [Module 5 QA/QC practice](../practice/project1_module_5_qa_qc_practice.ipynb) and `src/qa.py`.
+This reference teaches the quality concepts behind [Module 5 QA/QC practice](../starters/project1_module_5_qa_qc_practice.ipynb) and `src/qa.py`.
 
 ## 1. QA, QC, and the Quality Gate
 
@@ -222,6 +222,6 @@ You should be able to explain:
 
 ## Companion Resources
 
-- [Module 5 QA/QC practice](../practice/project1_module_5_qa_qc_practice.ipynb)
+- [Module 5 QA/QC practice](../starters/project1_module_5_qa_qc_practice.ipynb)
 - [Module 4 Transform reference](project1_module_4_transform_reference.md)
 - [Module 6 Load/PostGIS reference](project1_module_6_load_postgis_reference.md)

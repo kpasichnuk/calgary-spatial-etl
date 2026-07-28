@@ -116,4 +116,4 @@ Severity is a policy choice. A future project could add warnings for unusual but
 ## Related Resources
 
 - [Module 5 QA/QC reference](../reference/project1_module_5_qa_qc_reference.md)
-- [Module 5 QA/QC practice](../practice/project1_module_5_qa_qc_practice.ipynb)
+- [Module 5 QA/QC practice](../starters/project1_module_5_qa_qc_practice.ipynb)

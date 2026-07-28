@@ -181,5 +181,5 @@ Making a complete multi-system workflow atomic requires additional patterns, suc
 - [Idempotency](project1_idempotency.md)
 - [Data quality gates](project1_data_quality_gates.md)
 - [Module 6 Load and PostGIS reference](../reference/project1_module_6_load_postgis_reference.md)
-- [Module 6 Load and PostGIS practice](../practice/project1_module_6_load_postgis_practice.ipynb)
+- [Module 6 Load and PostGIS practice](../starters/project1_module_6_load_postgis_practice.ipynb)
 - [Module 7 orchestration and testing reference](../reference/project1_module_7_orchestration_testing_reference.md)

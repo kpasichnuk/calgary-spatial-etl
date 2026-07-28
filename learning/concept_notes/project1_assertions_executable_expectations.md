@@ -256,7 +256,7 @@ A skipped database test is not a passing database assertion. It means that behav
 ## Related Resources
 
 - [Module 0 Python foundations reference](../reference/project1_module_0_python_foundations_reference.md)
-- [Module 0 Python foundations practice](../practice/project1_module_0_python_foundations_practice.ipynb)
+- [Module 0 Python foundations practice](../starters/project1_module_0_python_foundations_practice.ipynb)
 - [Exceptions and context managers](project1_exceptions_context_managers.md)
 - [Function side effects](project1_function_side_effects.md)
 - [Data quality gates](project1_data_quality_gates.md)

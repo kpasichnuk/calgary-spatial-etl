@@ -61,12 +61,12 @@ If analysis reveals a data defect, document it and repair the owning ETL stage w
 
 | Module | Focus | Reference | Practice | Test |
 |---:|---|---|---|---|
-| A0 | Spatial questions and decision value | [Reference](reference/project1_analysis_module_0_spatial_questions_reference.md) | [Practice](practice/project1_analysis_module_0_spatial_questions_practice.ipynb) | [Test](module_tests/project1_analysis_module_0_spatial_questions_test.ipynb) |
-| A1 | Units, scale, CRS, and measurement | [Reference](reference/project1_analysis_module_1_measurement_scale_reference.md) | [Practice](practice/project1_analysis_module_1_measurement_scale_practice.ipynb) | [Test](module_tests/project1_analysis_module_1_measurement_scale_test.ipynb) |
-| A2 | Point-in-polygon joins and aggregation | [Reference](reference/project1_analysis_module_2_spatial_joins_reference.md) | [Practice](practice/project1_analysis_module_2_spatial_joins_practice.ipynb) | [Test](module_tests/project1_analysis_module_2_spatial_joins_test.ipynb) |
-| A3 | Normalization, validation, and interpretation | [Reference](reference/project1_analysis_module_3_interpretation_reference.md) | [Practice](practice/project1_analysis_module_3_interpretation_practice.ipynb) | [Test](module_tests/project1_analysis_module_3_interpretation_test.ipynb) |
+| A0 | Spatial questions and decision value | [Reference](reference/project1_analysis_module_0_spatial_questions_reference.md) | [Practice](starters/project1_analysis_module_0_spatial_questions_practice.ipynb) | [Test](module_tests/project1_analysis_module_0_spatial_questions_test.ipynb) |
+| A1 | Units, scale, CRS, and measurement | [Reference](reference/project1_analysis_module_1_measurement_scale_reference.md) | [Practice](starters/project1_analysis_module_1_measurement_scale_practice.ipynb) | [Test](module_tests/project1_analysis_module_1_measurement_scale_test.ipynb) |
+| A2 | Point-in-polygon joins and aggregation | [Reference](reference/project1_analysis_module_2_spatial_joins_reference.md) | [Practice](starters/project1_analysis_module_2_spatial_joins_practice.ipynb) | [Test](module_tests/project1_analysis_module_2_spatial_joins_test.ipynb) |
+| A3 | Normalization, validation, and interpretation | [Reference](reference/project1_analysis_module_3_interpretation_reference.md) | [Practice](starters/project1_analysis_module_3_interpretation_practice.ipynb) | [Test](module_tests/project1_analysis_module_3_interpretation_test.ipynb) |
 
-Each test is worth 25 points. A recommended progression threshold is 20/25.
+Each test is worth 25 points. Written reasoning and open-ended code are graded by AI after the notebook is complete; the learner does not assign their own points. A recommended progression threshold is an AI-reviewed 20/25.
 
 ## Learning Sequence
 
@@ -76,10 +76,24 @@ For each analysis module:
 
 1. Read the reference.
 2. State predictions before running operations.
-3. Complete the practice notebook.
-4. Inspect at least one expected and one surprising result.
-5. Complete the module test without the reference.
-6. Review any assumption that could change the conclusion.
+3. Create an ignored practice working copy with `python scripts/reset_notebook.py <module> --analysis`.
+4. Complete the practice notebook, inspect at least one expected and one surprising result, and ask AI for formative feedback.
+5. Preserve completed practice with `python scripts/save_attempt.py <module> --analysis`.
+6. Create and complete the module-test working copy without the reference by adding `--test` to the reset command.
+7. Run every completion check, preserve the test with the save command and `--test`, then ask AI to grade the recorded work.
+8. Review any assumption or misconception that could change the conclusion.
+
+Clean originals live in `starters/`, active copies live in the ignored `working/` folder, and completed work selected for preservation lives in `attempts/`.
+
+## AI Grading Workflow
+
+Complete the entire test before requesting a grade. Preserve the original answers, code, assertions, and outputs so the AI review reflects the attempt rather than a corrected version. AI should apply the question point values, verify executable evidence, cite support for each award or deduction, report the final score out of 25, and identify focused review actions.
+
+Use this prompt:
+
+> Grade my completed spatial-analysis module-test notebook. Preserve my original answers and code. Apply the stated question values, verify the executable checks and outputs, and cite specific evidence for each awarded or deducted point. Report the final score out of 25, demonstrated strengths, misconceptions, and prioritized review actions. Ask targeted follow-up questions before giving complete corrected answers.
+
+Use the AI-reviewed result for progression. Check feedback against the module reference and notebook evidence, and request clarification for any unsupported deduction.
 
 ## Supporting Material
 

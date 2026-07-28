@@ -177,7 +177,7 @@ For high-consequence data, preserve the original geometry and record repair deta
 ## Related Resources
 
 - [Module 4 Transform reference](../reference/project1_module_4_transform_reference.md)
-- [Module 4 Transform practice](../practice/project1_module_4_transform_practice.ipynb)
+- [Module 4 Transform practice](../starters/project1_module_4_transform_practice.ipynb)
 - [Data quality gates](project1_data_quality_gates.md)
 - [Geographic and projected coordinate reference systems](project1_geographic_projected_crs.md)
 - [Data artifacts](project1_data_artifacts.md)

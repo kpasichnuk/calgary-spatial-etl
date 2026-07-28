@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This reference teaches the database-loading concepts behind [Module 6 Load and PostGIS practice](../practice/project1_module_6_load_postgis_practice.ipynb) and `src/load.py`.
+This reference teaches the database-loading concepts behind [Module 6 Load and PostGIS practice](../starters/project1_module_6_load_postgis_practice.ipynb) and `src/load.py`.
 
 ## 1. Load Stage Contract
 
@@ -206,6 +206,6 @@ You should be able to explain:
 
 ## Companion Resources
 
-- [Module 6 Load and PostGIS practice](../practice/project1_module_6_load_postgis_practice.ipynb)
+- [Module 6 Load and PostGIS practice](../starters/project1_module_6_load_postgis_practice.ipynb)
 - [Module 1 Environment/PostGIS reference](project1_module_1_environment_postgis_reference.md)
 - [Module 5 QA/QC reference](project1_module_5_qa_qc_reference.md)

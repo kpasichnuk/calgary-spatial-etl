@@ -238,7 +238,7 @@ Not every function should be pure. An ETL pipeline must read sources and publish
 ## Related Resources
 
 - [Module 0 Python foundations reference](../reference/project1_module_0_python_foundations_reference.md)
-- [Module 0 Python foundations practice](../practice/project1_module_0_python_foundations_practice.ipynb)
+- [Module 0 Python foundations practice](../starters/project1_module_0_python_foundations_practice.ipynb)
 - [Data artifacts](project1_data_artifacts.md)
 - [Atomic transactions](project1_atomic_transactions.md)
 - [Idempotency](project1_idempotency.md)
