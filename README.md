@@ -2,6 +2,10 @@
 
 A Python and PostGIS pipeline that extracts Calgary open-data layers, standardizes their schemas and spatial properties, applies a blocking QA gate, and loads validated layers into PostGIS.
 
+> Contains information licensed under the Open Government Licence – City of Calgary.
+
+See [References and Attribution](REFERENCES.md) for the source datasets, licence terms, geospatial standards, and software documentation used by this project.
+
 ## Pipeline
 
 1. **Extract** downloads configured GeoJSON sources and records provenance in `outputs/logs/extract_log.csv`.

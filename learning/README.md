@@ -91,7 +91,7 @@ Use these curriculum-wide resources after passing every module test:
 
 ## Concept Notes
 
-Use the [concept notes](concept_notes/README.md) for focused explanations of questions that arise while reading the guides. Current topics cover GitHub publication, dataset identifiers, data quality gates, coordinate reference systems, data contracts, schemas, provenance, idempotency, data artifacts, API pagination, environment dependency definitions, Docker containers, and geometry repair.
+Use the [concept notes](concept_notes/README.md) for focused explanations of questions that arise while reading the guides. Current topics cover GitHub publication, dataset identifiers, data quality gates, coordinate reference systems, data contracts, schemas, provenance, idempotency, data artifacts, API pagination, environment dependency definitions, Docker containers, geometry repair, and atomic transactions.
 
 ## Resource Roles
 
