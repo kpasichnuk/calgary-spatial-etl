@@ -18,5 +18,8 @@ These short notes capture follow-up concepts that arise while reading the Projec
 12. [Docker containers](project1_docker_containers.md)
 13. [Geometry repair](project1_geometry_repair.md)
 14. [Atomic transactions](project1_atomic_transactions.md)
+15. [Function side effects](project1_function_side_effects.md)
+16. [Exceptions and context managers](project1_exceptions_context_managers.md)
+17. [Assertions as executable expectations](project1_assertions_executable_expectations.md)
 
 Use a concept note when a term in a guide needs a focused explanation. Return to the module reference and practice notebook afterward so the concept stays connected to executable project behavior.

@@ -7,12 +7,37 @@ Start with Module 0 and complete the modules in numerical order. Each module bui
 For every module:
 
 1. Read the teaching reference.
-2. Complete the practice notebook and its self-checks.
-3. Close the reference and practice notebook.
-4. Complete the module test from memory.
-5. Score the written responses honestly and run all executable checks.
-6. Continue only after earning at least 20/25 (80%).
-7. Review missed objectives and retake the test when the score is below 80%.
+2. Create a disposable attempt with the reset command below.
+3. Complete the attempt notebook and its self-checks.
+4. Close the reference and attempt notebook.
+5. Complete the module test from memory.
+6. Score the written responses honestly and run all executable checks.
+7. Continue only after earning at least 20/25 (80%).
+8. Review missed objectives and retake the test when the score is below 80%.
+
+## Repeatable Notebook Workflow
+
+The notebooks in `practice/` are clean, version-controlled starters. Do not record personal answers directly in those files. Create a disposable working copy for one module from the repository root:
+
+```bash
+python scripts/reset_notebook.py 0
+```
+
+The command creates `learning/attempts/project1_module_0_python_foundations_attempt.ipynb`. The entire `attempts/` directory is ignored by Git, so answers and execution outputs remain local.
+
+Create fresh attempts for every module:
+
+```bash
+python scripts/reset_notebook.py all
+```
+
+The command refuses to overwrite existing work. Explicitly replace an existing attempt when you intend to start again:
+
+```bash
+python scripts/reset_notebook.py 0 --force
+```
+
+Completed work selected for review or portfolio evidence belongs in [solutions](solutions/README.md). Module 0 currently has a preserved [Python foundations solution](solutions/project1_module_0_python_foundations_solution.ipynb).
 
 ## Naming Convention
 
@@ -91,12 +116,14 @@ Use these curriculum-wide resources after passing every module test:
 
 ## Concept Notes
 
-Use the [concept notes](concept_notes/README.md) for focused explanations of questions that arise while reading the guides. Current topics cover GitHub publication, dataset identifiers, data quality gates, coordinate reference systems, data contracts, schemas, provenance, idempotency, data artifacts, API pagination, environment dependency definitions, Docker containers, geometry repair, and atomic transactions.
+Use the [concept notes](concept_notes/README.md) for focused explanations of questions that arise while reading the guides. Current topics cover GitHub publication, dataset identifiers, data quality gates, coordinate reference systems, data contracts, schemas, provenance, idempotency, data artifacts, API pagination, environment dependency definitions, Docker containers, geometry repair, atomic transactions, function side effects, exceptions and context managers, and assertions as executable expectations.
 
 ## Resource Roles
 
 - **Reference:** teaches concepts, mental models, common mistakes, and review criteria.
-- **Practice:** builds skills through guided exercises and immediate self-checks.
+- **Practice:** provides a clean, reusable source for guided exercises and self-checks.
+- **Attempt:** is a disposable, Git-ignored working copy created from a practice notebook.
+- **Solution:** preserves selected completed work as a review reference and portfolio record.
 - **Module test:** measures closed-note retention at the end of one module.
 - **Walkthrough:** demonstrates the connected project workflow.
 - **Guide:** explains curriculum-wide concepts or operating decisions.

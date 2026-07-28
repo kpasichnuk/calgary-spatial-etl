@@ -13,6 +13,14 @@ See [References and Attribution](REFERENCES.md) for the source datasets, licence
 3. **QA** checks schema, row presence, IDs, CRS, and geometry quality, then writes `outputs/qa/qa_report.csv`.
 4. **Load** writes only QA-approved layers to PostGIS in one transaction and verifies row counts, SRID, and spatial indexes.
 
+## Spatial Analysis Extension
+
+Project 1 now includes a structured [spatial analysis extension](analysis/README.md) that uses QA-approved communities and transit stops to study mapped stop density by community.
+
+The extension develops spatial intuition alongside Python and PostGIS skills: question framing, units and scale, CRS and measurement, spatial joins, normalization, validation, interpretation, and responsible communication. Its initial result is a screening comparison, not a claim about transit accessibility, equity, demand, or service quality.
+
+The analysis curriculum begins after the core ETL modules and includes references, clean practice notebooks, 25-point module tests, concept notes, and an implementation/testing boundary for the eventual reproducible case study.
+
 ## Setup
 
 ```bash
@@ -78,3 +86,9 @@ Start with the [Project 1 learning resource index](learning/README.md), or use t
 - [ETL walkthrough](learning/walkthroughs/project1_etl_walkthrough.ipynb)
 - [Big-picture project guide](learning/guides/project1_big_picture_guide.md)
 - [Big-picture assessment](learning/assessments/project1_big_picture_assessment.ipynb)
+
+## Portfolio Roadmap
+
+The [portfolio planning index](planning/README.md) records the longer-term path from this ETL project to a separate spatial API, web GIS application, and deeper analysis case study.
+
+Projects 2 and 3 are intentionally not created yet. The plan defines readiness gates and explains why each future project should remain an independent repository. When Project 2 begins, a portfolio-level VS Code multi-root workspace can group the sibling repositories without merging their Git histories, environments, or deployments.
