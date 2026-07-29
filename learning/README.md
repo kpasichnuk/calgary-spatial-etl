@@ -156,6 +156,7 @@ Use these curriculum-wide resources after passing every module test:
 3. Complete the [big-picture assessment](assessments/project1_big_picture_assessment.ipynb) for cumulative operational reasoning.
 4. Revisit the [study guide](guides/project1_study_guide.md) and [big-picture guide](guides/project1_big_picture_guide.md) for weak areas and runbook details.
 5. Use the [junior GIS developer guide](guides/project1_junior_gis_developer_guide.md) to frame the project for a portfolio or interview.
+6. Use the [junior GIS Python and SQL learning path](guides/junior_gis_python_sql_learning_path.md) for free external practice and an independent readiness check.
 
 ## Concept Notes
 
